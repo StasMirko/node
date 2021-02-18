@@ -19,9 +19,9 @@ function sortByGender(gender, timeFrom, timeTo){
                     fs.rename(
                         `${__dirname}/files/${timeFrom}/${file}`,
                         `${__dirname}/files/${timeTo}/${file}`,
-                        err1 => {
-                            if (err1){
-                                console.log(err1);
+                        err => {
+                            if (err){
+                                console.log(err);
                             }
                         })
                 }
