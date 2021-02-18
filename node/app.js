@@ -11,12 +11,10 @@ function sortByGender(gender, timeFrom, timeTo){
             console.log(err);
             return;
         }
-        console.log(files);
         files.forEach(file => {
             fs.readFile(`${__dirname}/files/${timeFrom}/${file}`, (err, data) => {
                 const json = data.toString();
                 const obj = JSON.parse(json);
-                console.log(obj);
                 if (obj.gender === gender){
                     fs.rename(
                         `${__dirname}/files/${timeFrom}/${file}`,
