@@ -1,0 +1,12 @@
+
+{"mail":"stas","nickname":"mq","password":"1234"}
+{"mail":"orest","nickname":"mirko","password":"4321"}
+{"mail":"orest","nickname":"mirko","password":"4321"}
+{"mail":"ihor","nickname":"m","password":"1111"}
+{"mail":"ihor","nickname":"m","password":"1111"}
+{"mail":"stas","nickname":"mq","password":"1234"}
+{"mail":"stas","nickname":"mq","password":"1234"}
+{"mail":"orest","nickname":"mirko","password":"3333"}
+{"mail":"orest","nickname":"mirko","password":"3333"}
+{"mail":"stas","nickname":"mq","password":"1234"}
+{"mail":"stas","nickname":"mq","password":"1234"}
