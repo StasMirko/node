@@ -3,7 +3,11 @@ const path = require('path');
 
 const apiRouter = require('./router/api.router');
 // const connection = require('./dataBase/index');
+
 const db = require('./dataBase').getInstance();
+db.setModels();
+
+
 const app = express();
 
 app.use(express.json());

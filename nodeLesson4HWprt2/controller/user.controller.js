@@ -2,9 +2,9 @@ const userService = require('../service/user.service');
 
 module.exports = {
 
-    getAllUsers: async (req, res) => {
+    getAllUsers: (req, res) => {
         try {
-            const users = await userService.findUsers();
+            const users = userService.findUsers();
             res.json(users);
         } catch (e) {
             res.status(400).json(e.message);
@@ -18,9 +18,8 @@ module.exports = {
         res.json(user);
     },
 
-    createUser: async (req, res) => {
-        await userService.createUser(req.body);
-        // res.status(201).json('User is created!');
-        res.end()
+    createUser: (req, res) => {
+        userService.createUser(req.body);
+        res.status(201).json('User is created!');
     }
 }

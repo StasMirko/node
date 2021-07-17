@@ -1,16 +1,25 @@
-const DB = require('../dataBase/users');
+// findUsers
+// createUser
+
+const  db = require('../dataBase').getInstance();
+
 
 module.exports = {
-    findUsers: () => {
-        return DB;
+
+    findUsers: async () => {
+
+        const  UserModel = db.getModel('User');
+
+        const users = await UserModel.findAll({});
+
+        return users;
     },
 
-    findUserById: (userId) => {
-        return DB[userId];
-    },
+    createUser: async (user) => {
 
-    createUser: (userOdject) => {
-        DB.push(userOdject);
+        const  UserModel = db.getModel('User');
+
+        await UserModel.create(user);
     }
 
 }
